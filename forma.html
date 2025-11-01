@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forma</title>
+    <link rel="stylesheet" href="forma.css">
+</head>
+<body>
+    
+    <header id="glavni-header">
+        <nav class="navigacija">
+            <a href="index.html" class="nav-gumb">Početna</a>
+            <a href="forma.html" class="nav-gumb">Forma</a>
+        </nav>
+    </header>
+
+    <form id="kontaktForma" name="kontaktForma">
+    <fieldset>
+        <legend>Kontakt Podaci</legend>
+
+        <label for="ime">Ime i prezime:</label>
+        <input type="text" id="ime" name="ime" placeholder="Unesite ime i prezime" value="" required>
+
+        <label for="email">Email adresa:</label>
+        <input type="email" id="email" name="email" placeholder="primjer@email.com" required>
+
+        <label for="web">Web stranica:</label>
+        <input type="url" id="web" name="web" placeholder="https://..." required>
+
+        <label for="lozinka">Lozinka:</label>
+        <input type="password" id="lozinka" name="lozinka" placeholder="Unesite lozinku" required>
+
+        <label for="grad">Grad:</label>
+        <select id="grad" name="grad" required>
+        <option value="">Odaberite grad</option>
+        <option value="zagreb">Zagreb</option>
+        <option value="split">Split</option>
+        <option value="rijeka">Rijeka</option>
+        </select>
+
+        <label for="zanimanje">Zanimanje:</label>
+        <input list="zanimanja" id="zanimanje" name="zanimanje" placeholder="Upišite zanimanje" required>
+        <datalist id="zanimanja">
+        <option value="Programer">
+        <option value="Dizajner">
+        <option value="Učitelj">
+        <option value="Inženjer">
+        </datalist>
+
+        <button type="submit" value="Pošalji">Pošalji</button>
+    </fieldset>
+</form>
+
+</body>
+</html>
