@@ -150,7 +150,7 @@ input[type="email"] {
     border-left: 4px solid red;
 }
 
-input[type="url"] {
+input[type="tel"] {
     border-left: 4px solid #ffcc00;
 }
 
@@ -220,4 +220,5 @@ h1 {
     -webkit-text-stroke: 1px black;
     text-shadow: 2px 2px 5px rgba(255, 0, 0, 0.5);
     margin-top: 5rem;
+
 }
