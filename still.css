@@ -222,3 +222,50 @@ ul li:hover {
     color: red;
     padding: 0 1.5rem 1.5rem 0;
 }
+
+#informacijeTablica {
+    width: 100%;
+    max-width: 1000px;
+    margin: 2rem auto;
+    border-collapse: collapse;
+    background-image: url("Slike/pozadina2.jpg");
+    background-size: cover;
+    color: rgb(218, 218, 80);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#informacijeTablica th, #informacijeTablica td {
+    padding: 15px 25px;
+    text-align: center;
+    border: 1px solid rgba(126, 13, 13, 0.5);
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+}
+
+#informacijeTablica th {
+    background-color: rgba(126, 13, 13, 0.5);
+    color: rgb(218, 218, 80);
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#informacijeTablica td {
+    background-color: rgba(30, 30, 30, 0.8);
+    color: rgb(218, 218, 80);
+    border-bottom: 1px solid rgba(100, 100, 100, 0.5);
+}
+
+#informacijeTablica tr:nth-child(even) {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+#informacijeTablica tr:nth-child(odd) {
+    background-color: rgba(60, 0, 0, 0.6);
+}
+
+#informacijeTablica tr:hover {
+    background-color: rgb(126, 13, 13);
+}
