@@ -1,131 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Početna</title>
-    <link rel="stylesheet" href="still.css">
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Početna</title>
+  <link rel="stylesheet" href="still.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
-    
-    <header id="glavni-header">
-        <nav class="navigacija">
-            <a href="index.html" class="nav-gumb">Početna</a>
-            <a href="forma.html" class="nav-gumb">Forma</a>
-        </nav>
-    </header>
+  
 
-    <div id="naslov">
-        <h1>PROJEKTNA STRANICA</h1>
-        <h2>Multimedijske Komunikacije 1</h2>
-        <h3><sup>Vinko Perković</sup></h3>
+
+  <!-- NASLOVNA -->
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>PROJEKTNA STRANICA</h1>
+      <h2>Multimedijske Komunikacije 1</h2>
+      <h3><sup>Vinko Perković</sup></h3>
     </div>
+  </section>
 
-    <div class="odlomak">
-        <p>
-        Ovo je uvod u projektni zadatak iz kolegija <b><span style="color: red; font-weight: 800;">Multimedijske Komunikacije 1</span></b>.<br>
-        Unutar kolegija se trenutno obrađuju dvije cjeline, a to su:</p><br>
-        <ol>
-            <li>HTML</li>
-            <li>CSS</li>
-        </ol><br>
-        <p>Stranica privremeno <em>nema određene teme</em> te iz tog razloga zahtijevamo malo strpljenja.<br>
-        Radi održavanja nekakvog interesa, ispod se nalaze nekakvi dodatni elementi i par informacija o meni.<br>
-        </p><br>
-    </div>
+  <!-- HEADER -->
 
-    <div class="underline"></div>
+  <header id="glavni-header">
+    <nav class="navigacija">
+      <a href="index.html" class="nav-gumb"><span>Početna</span></a>
+      <a href="forma.html" class="nav-gumb"><span>Forma</span></a>
+    </nav>
+  </header>
 
-    <div class="odlomak">     
-        <img src="Slike/icon.jpg" alt="Ikona" class="float-img">
-        <p>
-        Kodiranjem sam se počeo baviti još u srednjoj školi te sam relativno dobro upoznat s nekim jezicima, kao što su <i><span style="color: rgb(136, 47, 47);">HTML, CSS, Python, Django</span></i> pa čak i <i><span style="color: rgb(136, 47, 47);">JS</span></i>.<br>
-        Osim programiranja, dosta vremena provodim u <ins>crtanju</ins>.<br>
-        Osim papira, koristim i digitalne programe za to, kao što su <strong><span style="color: rgb(218, 83, 83);">SketchBook, Krita, PaintTool SAI</span></strong> i drugi.<br>
-        </p><br>
-    </div>
+  <!-- UVOD -->
 
-    <div class="underline"></div>
-    
-    <div class="odlomak">
-        <p class="podnaslov">Ostali programi s kojima sam upoznat</p>
-        <ul>
-            <li>CapCut</li>
-            <li>Visual Studio Code</li>
-            <li>Photoshop</li>
-            <li>Illustrator</li>
-            <li>Blender</li>
-            <li>Figma</li>
-            <li>WordPress</li>
-            <li>Audacity</li>
-            <li>Filmora</li>
-            <li>MySQL</li>
-        </ul><br>
-    </div>
+  <section class="block intro">
+  <p class="intro-main">Ovo je uvod u projektni zadatak iz kolegija <b><span class="highlight">Multimedijske Komunikacije 1</span></b>.</p>
+  <p class="intro-sub">Kolegij obuhvaća dvije glavne cjeline:</p>
+  <div class="cards">
+      <div class="card">
+        <div class="icon"><i class="material-icons md-36">code</i></div>
+        <p class="title">HTML</p>
+        <p class="text">"Kostur", služi kao glavna struktura i temelj svake stranice.</p>
+      </div>
+      <div class="card">
+        <div class="icon"><i class="material-icons md-36">brush</i></div>
+        <p class="title">CSS</p>
+        <p class="text">"Interijer", koristi se za uređenje i izgled stranice.</p>
+      </div>
+  </div>
+  </section>
 
-    <div class="underline"></div>
+  <!-- O MENI -->
 
-    <div class="odlomak">
-        <p class="podnaslov">Par osobnih radova</p>
-        <div class="slike">
-            <img src="Slike/slika1.png">
-            <img src="Slike/slika2.png">
-            <img src="Slike/slika3.png">
-        </div>
+  <section class="block split">
+    <article>
+      <h3>Programiranje</h3>
+      <p>Programiranjem sam se počeo baviti u srednjoj školi. Upoznat sam s jezicima poput <span class="accent1">HTML, CSS, Python, Django</span> i <span class="accent1">JS</span>.</p>
+    </article>
+    <article>
+      <h3>Crtanje</h3>
+      <p>Osim kodiranja, bavim se <ins>crtanjem</ins> — koristim papir i digitalne alate poput <span class="accent2">SketchBook, Krita, PaintTool SAI</span> i <span class="accent2">ibisPaint X</span>.</p>
+    </article>
+  </section>
 
-        <div class="videozapis">
-            <p class="podnaslov">Moja animacija</p>
-            <iframe src="https://www.youtube.com/embed/56rMh87bHoo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <br>
-            <p class="podnaslov">Moj uređeni video</p>
-            <video controls poster="Slike/v1 thumbnail.jpg"><source src="Videozapisi/v1.mp4" type="video/mp4"></video><br>
-            <p class="podnaslov">Glazba koju sam koristio</p>
-            <audio controls><source src="Ostalo/glazba.mp3" type="audio/mp3"></audio>
-        </div>
-    </div>
+  <!-- LISTA -->
 
-    <div class="underline"></div>
+  <section class="block">
+    <p class="podnaslov">Ostali programi s kojima sam upoznat</p>
+    <ul class="programs">
+      <li>CapCut</li>
+      <li>Visual Studio Code</li>
+      <li>Photoshop</li>
+      <li>Illustrator</li>
+      <li>Blender</li>
+      <li>Figma</li>
+      <li>WordPress</li>
+      <li>Audacity</li>
+      <li>Filmora</li>
+      <li>MySQL</li>
+    </ul>
+  </section>
 
-    <div class="odlomak">
-        <p class="podnaslov">Tablica o količini radova</p>
-        <table id="informacijeTablica">
-            <thead>
-                <tr>
-                    <th rowspan="2">GODINA</th>
-                    <th colspan="2">KOLIČINA</th>
-                </tr>
-                <tr>
-                    <th>Tradicionalni</th>
-                    <th>Digitalni</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>2023</td>
-                    <td>57</td>
-                    <td>14</td>
-                </tr>
-                <tr>
-                    <td>2024</td>
-                    <td>54</td>
-                    <td>27</td>
-                </tr>
-                <tr>
-                    <td>2025</td>
-                    <td>32</td>
-                    <td>21</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
+  <!-- GALERIJA -->
 
-    <div id="kraj">
-        <p>To je to za sada.<br>
-        Hvala na pažnji i vidimo se uskoro!</p>
-    </div>
+  <section class="block dark">
+    <p class="podnaslov">Par digitalnih radova</p>
+    <ul class="gallery">
+      <li><img src="Slike/slika1.png" alt="Rad 1"></li>
+      <li><img src="Slike/slika2.png" alt="Rad 2"></li>
+      <li><img src="Slike/slika3.png" alt="Rad 3"></li>
+      <li><img src="Slike/slika4.png" alt="Rad 4"></li>
+      <li><img src="Slike/slika5.png" alt="Rad 5"></li>
+      <li><img src="Slike/slika6.png" alt="Rad 6"></li>
+    </ul>
+  </section>
 
-    <p id="vrijeme"><sub>8.11.2025.</sub></p>
-    
+  <!-- VIDEOZAPISI I AUDIO -->
+
+  <section class="split video-block">
+    <article>
+      <p class="podnaslov">Moja animacija</p>
+      <iframe src="https://www.youtube.com/embed/56rMh87bHoo" frameborder="0" allowfullscreen></iframe>
+    </article>
+
+    <article>
+      <p class="podnaslov">Moj uređeni video</p>
+      <video controls poster="Slike/v1 thumbnail.jpg">
+        <source src="Videozapisi/v1.mp4" type="video/mp4">
+      </video>
+
+      <p class="podnaslov">Glazba koju sam koristio</p>
+      <audio controls>
+        <source src="Ostalo/glazba.mp3" type="audio/mp3">
+      </audio>
+    </article>
+  </section>
+
+  <!-- TABLICA-->
+
+  <section class="block dark">
+    <p class="podnaslov">Tablica o količini radova</p>
+    <table id="informacijeTablica">
+      <thead>
+        <tr>
+          <th rowspan="2">Godina</th>
+          <th colspan="2">Količina</th>
+        </tr>
+        <tr>
+          <th>Tradicionalni</th>
+          <th>Digitalni</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>2023</td>
+          <td>57</td>
+          <td>14</td>
+        </tr>
+        <tr>
+          <td>2024</td>
+          <td>54</td>
+          <td>27</td>
+        </tr>
+        <tr>
+          <td>2025</td>
+          <td>32</td>
+          <td>21</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- FOOTER -->
+
+  <footer id="kraj">
+    <p>To je to za sada.<br>Hvala na pažnji i vidimo se uskoro!</p>
+  </footer>
+
+  <p id="vrijeme"><sub>8.11.2025.</sub></p>
 </body>
 </html>

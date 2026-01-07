@@ -7,51 +7,54 @@
     <link rel="stylesheet" href="forma.css">
 </head>
 <body>
-    
-    <header id="glavni-header">
-        <nav class="navigacija">
-            <a href="index.html" class="nav-gumb">Početna</a>
-            <a href="forma.html" class="nav-gumb">Forma</a>
-        </nav>
-    </header>
 
-    <form id="kontaktForma" name="kontaktForma">
+  <!-- HEADER -->
+
+  <header id="glavni-header">
+    <nav class="navigacija">
+      <a href="index.html" class="nav-gumb"><span>Početna</span></a>
+      <a href="forma.html" class="nav-gumb"><span>Forma</span></a>
+    </nav>
+  </header>
+
+  <!-- FORMA -->
+
+  <form id="kontaktForma" name="kontaktForma">
     <fieldset>
-        <legend>Kontakt Podaci</legend>
+      <legend>Kontakt Podaci</legend>
 
-        <label for="ime">Ime i prezime:</label>
-        <input type="text" id="ime" name="ime" placeholder="Unesite ime i prezime" value="" required>
+      <label for="ime">Ime i prezime:</label>
+      <input type="text" id="ime" name="ime" placeholder="Unesite ime i prezime" value="" required>
 
-        <label for="email">Email adresa:</label>
-        <input type="email" id="email" name="email" placeholder="primjer@email.com" required>
+      <label for="email">Email adresa:</label>
+      <input type="email" id="email" name="email" placeholder="primjer@email.com" required>
 
-        <label for="telefon">Telefon:</label>
-        <input type="tel" id="telefon" name="telefon" placeholder="+385..." required>
+      <label for="telefon">Telefon:</label>
+      <input type="tel" id="telefon" name="telefon" placeholder="+385..." required>
 
-        <label for="lozinka">Lozinka:</label>
-        <input type="password" id="lozinka" name="lozinka" placeholder="Unesite lozinku" required>
+      <label for="lozinka">Lozinka:</label>
+      <input type="password" id="lozinka" name="lozinka" placeholder="Unesite lozinku" required>
 
-        <label for="grad">Grad:</label>
-        <select id="grad" name="grad" required>
+      <label for="grad">Grad:</label>
+      <select id="grad" name="grad" required>
         <option value="">Odaberite grad</option>
         <option value="zagreb">Zagreb</option>
         <option value="split">Split</option>
         <option value="rijeka">Rijeka</option>
-        </select>
+      </select>
 
-        <label for="zanimanje">Zanimanje:</label>
-        <input list="zanimanja" id="zanimanje" name="zanimanje" placeholder="Upišite zanimanje" required>
-        <datalist id="zanimanja">
+      <label for="zanimanje">Zanimanje:</label>
+      <input list="zanimanja" id="zanimanje" name="zanimanje" placeholder="Upišite zanimanje" required>
+      <datalist id="zanimanja">
         <option value="Programer">
         <option value="Dizajner">
         <option value="Učitelj">
         <option value="Inženjer">
-        </datalist>
+      </datalist>
 
-        <button type="submit" value="Pošalji">Pošalji</button>
+      <button type="submit" value="Pošalji">Pošalji</button>
     </fieldset>
-</form>
+  </form><br><br><br>
 
 </body>
-
 </html>
