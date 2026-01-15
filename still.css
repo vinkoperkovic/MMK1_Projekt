@@ -515,3 +515,24 @@ ul li:hover {
   #kraj { font-size: 1.6rem; padding-top: 5rem; }
   #vrijeme { text-align: center; }
 }
+
+/* ZABLICA*/
+@media (max-width: 600px) {
+
+  #informacijeTablica {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    font-size: 0.9rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  #informacijeTablica th,
+  #informacijeTablica td {
+    padding: 8px 12px;
+    font-size: 1rem;
+    white-space: nowrap;
+  }
+}
