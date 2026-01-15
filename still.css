@@ -78,18 +78,18 @@ html, body {
   text-align: center;
 }
 
-.hero-text h1 {
+.hero-text > h1 {
   font-size: 4rem;
   font-weight: 800;
   color: #fff;
 }
 
-.hero-text h2 {
+.hero-text h1 + h2 {
   font-size: 2rem;
   color: #00bcd4;
 }
 
-.hero-text h3 {
+.hero-text h1 ~ h3 {
   font-size: 1.2rem;
   color: #ccc;
 }
@@ -230,24 +230,26 @@ html, body {
   padding: 4rem 2rem;
 }
 
-.split article {
-  --c: #00bcd4;
-  position: relative;
-  padding: 2rem;
-  background: var(--c);
+.block.split article:nth-of-type(1) {
+  background: linear-gradient(270deg,#004d5a,#006978,#0097a7,#00bcd4);
+  background-size: 600% 600%;
+  animation: colorMovement 10s ease infinite;
   color: #000;
+  padding: 2rem;
   border-radius: 12px;
-  box-shadow: inset 0 0 0 6px #000;
-  transition: transform 0.3s ease;
+}
+
+.block.split article:nth-of-type(2) {
+  background: linear-gradient(270deg,#560027,#880e4f,#d81b60,#ff4081);
+  background-size: 600% 600%;
+  animation: colorMovement 10s ease infinite;
+  color: #fff;
+  padding: 2rem;
+  border-radius: 12px;
 }
 
 .split article:hover {
   transform: translateY(-6px);
-}
-
-.split article:nth-child(2) {
-  --c: #ff4081;
-  color: #fff;
 }
 
 .split h3 {
@@ -337,7 +339,7 @@ ul li:hover {
   max-width: 100vw;
 }
 
-.gallery li {
+.gallery li:nth-of-type(n) {
   flex: 0 0 60px;
   overflow: hidden;
   border-radius: 12px;
@@ -461,10 +463,35 @@ ul li:hover {
   align-items: center;
   text-align: center;
   font-size: 2rem;
-  color: #00bcd4;
   font-family: 'Dancing Script', cursive;
   font-weight: 700;
+  background: linear-gradient(270deg,#24202b,#0e061b,#000000);
+  background-size: 600% 600%;
+  animation: colorMovement 15s ease infinite;
 }
+
+#kraj > p {
+  background: linear-gradient(270deg, #d4000b, #bb00d4, #00bcd4);
+  background-size: 600% 600%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: colorMovement 15s ease infinite;
+}
+
+
+@keyframes colorMovement {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 
 #vrijeme {
   text-align: right;
