@@ -410,47 +410,47 @@ ul li:hover {
 /* TABLICA */
 
 #informacijeTablica {
-    width: 100%;
-    max-width: 1000px;
-    margin: 2rem auto;
-    border-collapse: collapse;
-    background: url("Slike/pozadina2.jpg") center/cover;
-    color: #ff4081;
-    border-radius: 10px;
-    overflow: hidden;
+  width: 100%;
+  max-width: 1000px;
+  margin: 2rem auto;
+  border-collapse: collapse;
+  background: url("Slike/pozadina2.jpg") center/cover;
+  color: #ff4081;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 #informacijeTablica th, 
 #informacijeTablica td {
-    padding: 15px 25px;
-    text-align: center;
-    border: 1px solid rgba(13, 71, 126, 0.5);
-    font-size: 1.2rem;
-    transition: 0.3s;
+  padding: 15px 25px;
+  text-align: center;
+  border: 1px solid rgba(13, 71, 126, 0.5);
+  font-size: 1.2rem;
+  transition: 0.3s;
 }
 
 #informacijeTablica th {
-    background: rgba(13, 71, 126, 0.5);
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+  background: rgba(13, 71, 126, 0.5);
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 #informacijeTablica td {
-    background: rgba(30, 30, 30, 0.8);
-    border-bottom: 1px solid rgba(100, 100, 100, 0.5);
+  background: rgba(30, 30, 30, 0.8);
+  border-bottom: 1px solid rgba(100, 100, 100, 0.5);
 }
 
 #informacijeTablica tr:nth-child(even) {
-    background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.7);
 }
 
 #informacijeTablica tr:nth-child(odd) {
-    background: rgba(0, 60, 90, 0.6);
+  background: rgba(0, 60, 90, 0.6);
 }
 
 #informacijeTablica tr:hover {
-    background: rgb(13, 71, 126);
+  background: rgb(13, 71, 126);
 }
 
 /* FOOTER */
@@ -468,6 +468,7 @@ ul li:hover {
   background: linear-gradient(270deg,#24202b,#0e061b,#000000);
   background-size: 600% 600%;
   animation: colorMovement 15s ease infinite;
+  perspective: 1000px;
 }
 
 #kraj > p {
@@ -476,22 +477,25 @@ ul li:hover {
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  animation: colorMovement 15s ease infinite;
+  animation: colorMovement 15s ease infinite, footerSpin 7s linear infinite;
+  display: inline-block;
+  padding: 1rem 2rem;
+  border-radius: 12px;
+  transform-style: preserve-3d;
+  backface-visibility: visible;
 }
 
+@keyframes footerSpin {
+  0%   { transform: rotateY(0deg); }
+  50%  { transform: rotateY(180deg); }
+  100% { transform: rotateY(360deg); }
+}
 
 @keyframes colorMovement {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
 }
-
 
 #vrijeme {
   text-align: right;
